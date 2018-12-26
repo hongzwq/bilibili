@@ -56,11 +56,15 @@ if __name__ == '__main__':
                     while True:
                         data = res.read(block_size)
                         if not data:
-                            break
+                            if size == length:
+                                break
+                            else:
+                                raise Exception('{} downloaded size is not same as expected length.'.format(dn_file))
                         f.write(data)
                         size += len(data)
                         if length:
                             utility.progress_bar(size, length, prefix='Progress:', suffix='Complete', length=50)
+
                 if os.path.isfile(file):
                     os.remove(file)
                 os.rename(dn_file, file)
