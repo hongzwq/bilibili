@@ -46,4 +46,4 @@ acceptable bilibili url : https://space.bilibili.com/30652169/video
 the number : 30652169 is called mid and will be used as a folder name to store all related files
 we can accept http or https
 
-notice: by default, if you do not specify the keyword file, keyword.txt will be used
+notice: by default, if you do not specify the keyword file, keyword.txt will be used. if you want to ignore the keywords, use "-k:", which will trigger a warning but no impact and disabled the keywords filter.
