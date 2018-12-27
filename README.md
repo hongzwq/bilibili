@@ -3,7 +3,7 @@ bilibili space video crawler
 
 Welcome to bilibili downloader
 ==============================
-usage:
+usage(support windows only for now):
 
 general concept of the command line:
 >python bilibili.py (mode options) (keywords options) parameters
